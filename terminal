@@ -1,0 +1,191 @@
+Last login: Mon Feb 25 13:09:29 on console
+CCDM09:~ ccdm09$ cd /Users/ccdm09/Desktop/pw219113 
+CCDM09:pw219113 ccdm09$ git branch
+* (HEAD detached at 19f6c22)
+  master
+CCDM09:pw219113 ccdm09$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+CCDM09:pw219113 ccdm09$ git branch
+* master
+CCDM09:pw219113 ccdm09$ git branch prueba
+CCDM09:pw219113 ccdm09$ git branch
+* master
+  prueba
+CCDM09:pw219113 ccdm09$ git checkout prueba 
+Switched to branch 'prueba'
+CCDM09:pw219113 ccdm09$ git status
+On branch prueba
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   ejemplos.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	miscommits.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+CCDM09:pw219113 ccdm09$ git add -A
+CCDM09:pw219113 ccdm09$ git commit -m "Cambio en rama prueba"
+[prueba 7fa69ce] Cambio en rama prueba
+ 2 files changed, 12 insertions(+)
+ create mode 100644 miscommits.txt
+CCDM09:pw219113 ccdm09$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+CCDM09:pw219113 ccdm09$ git checkout prueba 
+Switched to branch 'prueba'
+CCDM09:pw219113 ccdm09$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+CCDM09:pw219113 ccdm09$ git checkout prueba 
+Switched to branch 'prueba'
+CCDM09:pw219113 ccdm09$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+CCDM09:pw219113 ccdm09$ git checkout master
+Already on 'master'
+Your branch is up to date with 'origin/master'.
+CCDM09:pw219113 ccdm09$ git checkout prueba 
+Switched to branch 'prueba'
+CCDM09:pw219113 ccdm09$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+CCDM09:pw219113 ccdm09$ git checkout prueba 
+Switched to branch 'prueba'
+CCDM09:pw219113 ccdm09$ git checkout prueba 
+M	ejemplos.html
+Already on 'prueba'
+CCDM09:pw219113 ccdm09$ git add -A
+CCDM09:pw219113 ccdm09$ git commit -m "Modificacion prueba"
+[prueba 343383b] Modificacion prueba
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+CCDM09:pw219113 ccdm09$ git push -u origin prueba
+remote: Permission to GuilleCRS/pw219113.git denied to elmerjosue10.
+fatal: unable to access 'https://github.com/GuilleCRS/pw219113.git/': The requested URL returned error: 403
+CCDM09:pw219113 ccdm09$ git push -u origin prueba
+Username for 'https://github.com': guillecrs
+Password for 'https://guillecrs@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/GuilleCRS/pw219113.git/'
+CCDM09:pw219113 ccdm09$ git push -u origin prueba
+Username for 'https://github.com': guillecrs
+Password for 'https://guillecrs@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/GuilleCRS/pw219113.git/'
+CCDM09:pw219113 ccdm09$ git push -u origin prueba
+Username for 'https://github.com': GuilleCRS
+Password for 'https://GuilleCRS@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/GuilleCRS/pw219113.git/'
+CCDM09:pw219113 ccdm09$ git push -u origin prueba
+Username for 'https://github.com': GuilleCRS
+Password for 'https://GuilleCRS@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/GuilleCRS/pw219113.git/'
+CCDM09:pw219113 ccdm09$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+CCDM09:pw219113 ccdm09$ git merge prueba 
+Updating 19f6c22..343383b
+Fast-forward
+ ejemplos.html  |  1 +
+ miscommits.txt | 11 +++++++++++
+ 2 files changed, 12 insertions(+)
+ create mode 100644 miscommits.txt
+CCDM09:pw219113 ccdm09$ git branch
+* master
+  prueba
+CCDM09:pw219113 ccdm09$ git checkout prueba
+Switched to branch 'prueba'
+CCDM09:pw219113 ccdm09$ git push -u origin prueba
+Username for 'https://github.com': GuilleCRS
+Password for 'https://GuilleCRS@github.com': 
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 843 bytes | 843.00 KiB/s, done.
+Total 7 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'prueba' on GitHub by visiting:
+remote:      https://github.com/GuilleCRS/pw219113/pull/new/prueba
+remote: 
+To https://github.com/GuilleCRS/pw219113.git
+ * [new branch]      prueba -> prueba
+Branch 'prueba' set up to track remote branch 'prueba' from 'origin'.
+CCDM09:pw219113 ccdm09$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+CCDM09:pw219113 ccdm09$ git push -u origin master
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/GuilleCRS/pw219113.git
+   19f6c22..343383b  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+CCDM09:pw219113 ccdm09$ git add -A 
+CCDM09:pw219113 ccdm09$ git commit -m "En la master"
+[master b2c6d5f] En la master
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+CCDM09:pw219113 ccdm09$ git checkout prueba
+Switched to branch 'prueba'
+Your branch is up to date with 'origin/prueba'.
+CCDM09:pw219113 ccdm09$ git add -A 
+CCDM09:pw219113 ccdm09$ git commit -m "En la prueba"
+[prueba dc6868b] En la prueba
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+CCDM09:pw219113 ccdm09$ git chekout master
+git: 'chekout' is not a git command. See 'git --help'.
+
+The most similar command is
+	checkout
+CCDM09:pw219113 ccdm09$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+CCDM09:pw219113 ccdm09$ git merge prueba
+Auto-merging ejemplos.html
+CONFLICT (content): Merge conflict in ejemplos.html
+Automatic merge failed; fix conflicts and then commit the result.
+CCDM09:pw219113 ccdm09$ git add -A
+CCDM09:pw219113 ccdm09$ git ocmmit -m "Conflicto resuelto"
+git: 'ocmmit' is not a git command. See 'git --help'.
+
+The most similar command is
+	commit
+CCDM09:pw219113 ccdm09$ git commit -m "Conflicto resuelto"
+[master 763ee1e] Conflicto resuelto
+CCDM09:pw219113 ccdm09$ git push -u origin master
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 774 bytes | 774.00 KiB/s, done.
+Total 9 (delta 7), reused 0 (delta 0)
+remote: Resolving deltas: 100% (7/7), completed with 2 local objects.
+To https://github.com/GuilleCRS/pw219113.git
+   343383b..763ee1e  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+CCDM09:pw219113 ccdm09$ git checkout prueba
+Switched to branch 'prueba'
+Your branch is ahead of 'origin/prueba' by 1 commit.
+  (use "git push" to publish your local commits)
+CCDM09:pw219113 ccdm09$ git push -u origin prueba
+Total 0 (delta 0), reused 0 (delta 0)
+^[[A^[[A^[[ATo https://github.com/GuilleCRS/pw219113.git
+   343383b..dc6868b  prueba -> prueba
+Branch 'prueba' set up to track remote branch 'prueba' from 'origin'.
+CCDM09:pw219113 ccdm09$ git add -A
+CCDM09:pw219113 ccdm09$ git commit -m "Push prueba"
+On branch prueba
+Your branch is up to date with 'origin/prueba'.
+
+nothing to commit, working tree clean
+CCDM09:pw219113 ccdm09$ clear
+
+CCDM09:pw219113 ccdm09$ 
+
