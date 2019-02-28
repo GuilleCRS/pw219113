@@ -1,0 +1,31 @@
+body{
+	max-width: 1024px;
+
+}
+header{
+	/*background: rgb(0,0,0);*/
+	/*background: rgba(0,0,0,0.5);*/
+	/*background: #AAA;*/
+	/*COLOR DE FONDO*/
+	background: blue;
+	/*COLOR DE LETRA*/
+	color: white;
+	/*Alinear al centro*/
+
+	text-align: center;
+
+}
+/*Se puede utilizar li solamente pero seria para todas las listas en las paginas*/
+header nav ul li{
+	display: inline-block;
+	background: orange;
+	color: black;
+	width: 90px;
+	border-radius: 5px;
+}
+/*Cuando ponga el mouse encima de un li hover*/
+header nav ul li:hover{
+	background: black;
+	color: orange;
+
+}
