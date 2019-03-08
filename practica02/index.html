@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-	<meta charset="utf-8">
+	<meta charset="utf-8" lang="es">
 	<title>Practica 02 hmtl5+css</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 </head>
 <body>
 	<header>
 		<img src="img/banner.png">
-		<img src="img/granthams.png">
-		<img src="img/paint.png">
+		<img src="img/granthams.png" id="granthams">
+		<img src="img/paint.png" id="paint" >
 		<input type="search" placeholder="Search" name="">
 		<nav>
 			<ul>
@@ -20,12 +21,13 @@
 			</ul>
 		</nav>
 	</header>
-	<section>
-		<article>
+	<section id="primerSeccion">
+		<article id="seccion01art01">
 			<img src="img/slide.jpg">
 		</article>
-		<article>
-			<span class="rosa nito"> We can offer...</span>			<ul>
+		<article id="seccion01art02">
+			<span class="rosa grande nito "> We can offer...</span>			
+			<ul>
 				<li>Highly competitive price</li>
 				<li>Variable data</li>
 				<li>Fast Turnaround</li>
@@ -36,21 +38,21 @@
 				<li>Great Customer Service</li>
 			</ul>
 		</article>
-		<img src="img/bg_offer.png">
+		<img src="img/bg_offer.png" id="ffer">
 	</section>
-	<section><article><span class="rosa nito">01772 250207</span></article></section>
-	<section>
+	<section id="segundaSeccion"><article class="rosa mediana nito"><span class="rosa nito">01772 250207</span></article></section>
+	<section id="terceraSeccion">
 		<article>
 			<img src="img/cerdito.png">
 			<span class="rosa nito">Save this Spring</span>
 			<br>
 			Fabulous discounts on canva's and roll up's as well as many other offers.
-			<span class="rosa">Find out more..</span>
+			<span class="rosa nito">Find out more..</span>
 		
 		</article>
 		<article>
 			<img src="img/hoja.png">
-			<span class="nito">Eco Friendly</span>
+			<span class="verde nito">Eco Friendly</span>
 			<br>
 			ECO Friendly materials used in our production process.
 			<br>
@@ -71,7 +73,7 @@
 			
 		</article>
 		<article>
-			<span class="rosa">Stay in touch</span>
+			<span class="rosa mediana">Stay in touch</span>
 			<br>
 			Join our mailing list today
 			<br>
