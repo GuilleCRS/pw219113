@@ -31,4 +31,54 @@ header nav ul li{
 	margin-left: 25px;
 	margin-top: 25px;
 }
+#primerSeccion{
+	height: 318px;
+	margin-top: 60px;
 
+}
+#primerSeccion article{
+	display: inline-block;
+	vertical-align: top;
+}
+#seccion01art01{
+	margin-left: 30px;
+	width: 60%;
+}
+#seccion01art02{
+	width: 30%;
+	margin-left: 50px;
+}
+#seccion01art02 ul{
+	margin-left:-40px;
+	list-style: none;
+}
+#seccion01art02 ul li:before{
+	content: "• ";
+	color: pink;
+}
+#offer{
+	position: relative;
+	top: -410px;
+	left: -35px;
+	
+}
+#segundaSeccion article{
+	margin-right: 165px;
+	text-align: right;
+
+}
+.rosa{
+	color: #FF0099;
+}
+.grande{
+	font-size: 3.5em;
+}
+.mediana{
+	font-size: 2em;
+}
+.nito{
+	font-weight: bold;
+}
+.azul{
+
+}
