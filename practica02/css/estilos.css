@@ -26,6 +26,8 @@ header nav ul li{
 footer{
 	background: #3B64B7;
 	padding-top: 40px;
+	padding-bottom: 10px;
+	margin-top: 50px;
 
 }
 footer section article{
@@ -39,9 +41,10 @@ footer section article{
 	text-align: center;
 }
 #fart3{
-	border:1px;
+	border: solid 1px;
 	border-color: white;
-	padding-bottom: 10px;
+	border-radius: 5px;
+	vertical-align: top;
 }
 #paint{
 	float:right;
@@ -99,7 +102,12 @@ footer section article{
 }
 #seccion03art04 img{
 	position: relative;
-	margin-top: 100px;
+	bottom: -120px;
+}
+#right{
+	position: relative;
+	top: 100px;
+	right: -100px;
 }
 #terceraSeccion article input{
 	border-radius: 5px;
