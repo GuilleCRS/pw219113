@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Primer javascript mal hecho</title>
+	<link rel="stylesheet" type="text/css" href="">
+	<script type="text/javascript">
+		function suma(a,b){
+			document.getElementById('resultado').innerHTML=a+b;
+		}
+	</script>
+	<style type="text/css">
+		button:hover{
+			transition: 10s linear;
+			color: white;
+			background-color: red;
+			padding: 40px;
+			transform: skew(40deg) translate(900px) t;
+		}
+	</style>
+</head>
+<body>
+	<span id="resultado"></span>
+	<br>
+	<button onclick="suma(70,56);">Suma</button>
+
+</body>
+</html>
