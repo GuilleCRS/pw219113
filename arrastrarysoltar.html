@@ -3,10 +3,20 @@
 <head>
 	<meta charset="utf-8">
 	<title>Arrastrar y soltar</title>
+	<style type="text/css">
+		#div1,#div2{
+			float: left;
+			border: 1px solid black;
+			height: 170px;
+			margin: 10px;
+			padding: 10px;
+			width: 100px;
+		}
+	</style>
 </head>
 <body>
-	<h2>Arrastar y soltar</h2>
-	<div id="div1">
+	<h2 id="h2">Arrastar y soltar</h2>
+	<div id="div1" ondragover="allowDrop(event)" ondrop="drop(event)">
 		<img src="img/logo.png" height="31" width="88" draggable="true"
 		ondragstart="drag(event)" id="arr1">
 		<img src="img/logo.png" height="31" width="88" draggable="true"
@@ -18,11 +28,33 @@
 
 	</div>
 
-	<div id="div2" ondragover="allowDrop(event)" ondrop="drop(event)>
-		
+	<div id="div2" ondragover="allowDrop(event)" ondrop="drop(event)">
+
 	</div>
 	<script type="text/javascript">
-		
+		function drop(ev){
+			ev.preventDefault();
+			//recuperamos el id del documento que se está arrastrando
+			// de data transfer
+			var data=ev.dataTransfer.getData("text");
+			//ev es el div2
+			//a traves del target tenemos acceso a appendChild
+			//appendChild permite agregar elementos en tiempo de ejecucion a una caja
+			//toma como paarametro el elemento que viene en camino
+			if(ev.target.appendChild(document.getElementById(data))){
+				document.getElementById("h2").innerHTML="FUNCA";
+			}
+		}
+		function allowDrop(ev){
+			//desactivamos el evento por defecto
+			//que no permite soltar el elemento en el receptor
+			ev.preventDefault();
+
+		}
+		function drag(ev){
+			//Guardar en un contendor
+			ev.dataTransfer.setData("text",ev.target.id);
+		}
 	</script>
 
 </body>

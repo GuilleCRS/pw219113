@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Geolocation</title>
+</head>
+<body>
+	<p id="demo">Obtener posicion del mapa</p>
+	<button onclick="localizacion();">Aceptar</button>
+	<div id="mapa"></div>
+	<script type="text/javascript">
+		function mPosicion(posicion){
+			var latlon=posicion.coords.latitude+","+posicion.coords.longitude;
+			var imagenMapa="https://maps.googleapis.com/maps/api/staticmap?center="+latlon+"&zoom=14&size=400x300&key=AIzaSyAtKadHnn8uAWyBRXYrLPGuTX3FY_2M3ew"
+			document.getElementById('mapa').innerHTML= "<img src='"+imagenMapa+"'>";
+			document.getElementById('demo').innerHTML=latlon;
+
+			}
+			function mError(mError){
+				var mensaje=
+			}
+		function localizacion(){
+
+			if(navigator.geolocation){ //Si el navegador lo soporta
+				//CALLBACK 
+				navigator.geolocation.getCurrentPosition(mPosicion,mError);
+			}
+		}
+	</script>
+
+
+</body>
+</html>
