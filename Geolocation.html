@@ -17,7 +17,22 @@
 
 			}
 			function mError(mError){
-				var mensaje=
+				var mensaje ="";
+			switch(error.code){
+				case error.PERMISSION_DENIED:
+					mensaje="No autorizo el usuario";
+					break;
+				case error.PERMISSION_UNAVAILABLE:
+					mensaje="Informacion no disponible";
+					break;
+				case error.TIMEOUT:
+					mensaje="Solicitud Expirada";
+					break;
+				case error.UNKNOWN_ERROR:
+					mensaje="Error desconocido";
+					break;
+			}
+			document.getElementById('demo').innnerHTML=mensaje;
 			}
 		function localizacion(){
 
