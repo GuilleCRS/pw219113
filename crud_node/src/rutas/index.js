@@ -8,6 +8,7 @@ rutas.get("/", (req,res)=>{
 });
 */
 rutas.get('/',customerController.list);
+rutas.post('/add',customerController.save);
 //rutas.post('/add',customerController.save);
 //rutas.get('/delete',customerController.delete);
 //rutas.get('/update/:id',customerController.edit);
