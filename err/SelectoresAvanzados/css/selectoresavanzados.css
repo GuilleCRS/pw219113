@@ -1,0 +1,68 @@
+img[alt]{
+	border:5px solid blue;
+}
+
+img[src="img/LOGO_TEC_PNG_OK.png"]{
+	width:400px;
+}
+
+img[src^="img/"]{
+	width: 150px;
+}
+img[src$="png"]{
+	width:250px;
+}
+img[src*="mg/"]{
+	width:1000px;
+}
+article[class~="resaltado"]{
+	border:1px dashed blue;
+}
+article[class~="resaltado"]{
+	border:1px dashed red;
+}
+article[class~="archivo"]{
+	border:1px dashed green;
+}
+article[class|="ingles"]{
+	text-align: center;
+}
+div > p{
+	color: blue;
+}
+
+div p{
+	color: red;
+}
+
+h2 + p{
+	color:gray;
+}
+h2 ~ p{
+	color:green;
+}
+#resumen,#exp,#pruebas,#resultados,#conclusiones{
+	color:red;
+}
+
+section:not(#referencias){
+	color:blue;
+}
+
+li:nth-child(odd){
+	color:green;
+}
+li:nth-child(even){
+	color:blue;
+}
+li:nth-child(5){
+	color:red;
+}
+li:nth-last-child(1){
+	color:purple
+}
+
+p:first-line{
+	color:red;
+	font-weight: bold;
+}

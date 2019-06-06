@@ -22,5 +22,13 @@ controller.list = (req,res) => {
 controller.save = (req,res)=>{
 
 }
+controller.delete = (req, res) =>{
+	const { id } = req.params;
+	req.getConnection((err,conn)=>{
+		conn.query('DELETE FROM customers WHERE id = ?',[id],(err,rows)=>{
+			res.redirect('/');
+		});
+	});
+}
 
 module.exports = controller;

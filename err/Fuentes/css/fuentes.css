@@ -1,0 +1,10 @@
+@font-face{
+	font-family: Noto_Sans;
+	src: ("Noto_Sans/NotoSans-Bold.ttf");
+}
+#textoRef{
+	font-family: 'Indie Flower', cursive;
+}
+#textoDes{
+	font-family: 'Noto_Sans', sans-serif;
+}

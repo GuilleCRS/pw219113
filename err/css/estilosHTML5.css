@@ -1,0 +1,26 @@
+body
+{
+	max-width: 1024px;
+}
+header
+{
+	/*Color de fondo*/
+	background: rgba(0,0,224,.7);
+	/*Color de letra*/
+	color: white;
+	text-align: center;
+}
+header nav ul li
+{
+	background: orange;
+	border-radius: 5px;
+	color: black;
+	display: inline-block;
+	width: 90px;
+}
+
+header nav ul li:hover
+{
+	background: black;
+	color: orange;
+}

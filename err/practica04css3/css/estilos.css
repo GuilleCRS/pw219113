@@ -1,0 +1,152 @@
+body{
+	max-width: 1078px;
+	min-width: 1078px;
+	font-size: 16px;
+	color: grey;
+	background-color: white;
+	margin: 0px auto;
+
+}
+
+header nav ul{
+	padding-left: 15px;
+
+}
+header nav  ul li{
+	display:inline-block;
+	list-style: none;
+	font-weight: bold;
+	color: black;
+	padding-right: 20px;
+	font-size: 1.2em;
+}
+footer{
+	padding-left: 15px;
+}
+footer article{
+	display:inline-block;
+	padding-top: 0px;
+	margin-top: 0px;	
+	text-align: top;
+}
+
+
+#first{
+	padding-top: 25px;
+	padding-left: 15px;
+	padding-bottom: 50px;
+}
+#buy{
+	position:relative;
+	top:-70px;
+	left:725px;
+}
+#goto{
+	position:relative;
+	top:-140px;
+	left:725px;
+}
+#secc1{
+	padding-left: 15px;
+	border-top: 2px dashed grey;
+	position:relative;
+	top:-50px;
+	height: 540px;
+}
+#secc1art1{
+	width: 550px;
+	height:170px;
+
+	padding-top: 10px;
+}
+#secc1 article{
+	text-align: top;	
+}
+#secc1art2{
+	width: 550px;
+	height:300px;
+	border-top: 2px dashed grey;
+	padding-top: 40px;
+}
+
+#secc1art2 img{
+	display:inline-block;
+	height: 190px;
+	width: 262px;
+	margin-top: 35px;
+}
+#v1{
+	padding-right: 20px;
+}
+
+#secc1art3 {
+	position:relative;
+	top:-522px;
+	left:550px;
+	width: 440px;
+	height:520px;
+	padding-left: 71px;
+}
+
+#bike{
+	width: 423px;
+	height:518px;
+}
+#years{
+	position:relative;
+	top:-100px;
+	left:-30px;
+	width: 141px;
+	height:80px;
+}
+#secc2{
+	position: relative;
+	top:-30px;
+	padding-left: 15px;
+}
+#secc2 img{
+	margin-right: 3px;
+}
+#secc2 article{
+	text-align: top;
+	
+}
+#medi{
+	width: 250px;
+	height: 100px;
+
+}
+.movido{
+	position: relative;
+	top:-225px;
+	left:650px;
+}
+.grande{
+	font-size:4.2em;
+}
+.negro{
+	color:black;
+}
+.nito{
+	font-weight: bold;
+}
+.verde{
+	color:#76F05F;
+}
+.normal{
+	width: 170px;
+	height: 150px;
+
+	margin-right: 25px;
+}
+.mediana{
+	font-size: 1.1em;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+	border-bottom: 1px solid grey;
+
+}
+.abajo{
+	
+	
+}
